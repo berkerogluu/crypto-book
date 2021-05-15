@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CryptoBook:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CryptoBook_jar</output-path>
+    <root id="archive" name="CryptoBook.jar">
+      <element id="module-output" name="CryptoBook" />
+    </root>
+  </artifact>
+</component>

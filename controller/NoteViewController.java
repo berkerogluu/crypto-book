@@ -70,7 +70,7 @@ public class NoteViewController {
             @Override
             public void windowClosing(WindowEvent e) {
                 if (JOptionPane.showConfirmDialog(view.getNoteFrame(),
-                        "Are you sure you want to close this window?", "Close Window?",
+                        mBundle.getString("CloseOperation_Message"), mBundle.getString("CloseOperation_Title"),
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION){
                     System.exit(0);

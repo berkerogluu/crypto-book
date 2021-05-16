@@ -1,2 +1,2 @@
 # CryptoBook
-AES Encryption supported notepad that can encrypt and decrypt notes.
+Notepad with AES encryption that can encrypt or decrypt notes.

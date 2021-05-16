@@ -141,6 +141,7 @@ public class NoteViewController {
                     BufferedWriter bf = new BufferedWriter(new FileWriter(file.getPath()));
                     bf.write(encryptData(i.getBytes(), hashPassword()));
                     bf.close();
+
                     view.getNoteFrame().setTitle(file.getName() + " - " + mBundle.getString("Frame_Title"));
                     JOptionPane.showMessageDialog(view.getNoteFrame(), "Saved Successfully!", "Done", JOptionPane.INFORMATION_MESSAGE);
                 } catch (IOException e) {
@@ -168,6 +169,7 @@ public class NoteViewController {
                     text = br.readLine();
                     br.close();
 
+                    view.getNoteFrame().setTitle(file.getName() + " - " + mBundle.getString("Frame_Title"));
                     text = decryptData(Base64.getDecoder().decode(text.getBytes()), hashPassword());
                     view.getTextArea().setText(text);
 
